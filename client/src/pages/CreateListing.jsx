@@ -238,7 +238,7 @@ function CreateListing() {
                 <input type="number" name="regularPrice" onChange={handleChange} value={formData.regularPrice} min="0" max="10000000" required className='p-3 border border-gray-300 rounded-lg'></input>
                 <div className='flex flex-col items-center'>
                   <p>Regular Price</p>
-                  {formData.type === "rent" && <span className='text-xs'>($ / month)</span>}
+                  {formData.type === "rent" && <span className='text-xs'>(Rs / month)</span>}
                 </div>
               </div>
 
@@ -247,7 +247,7 @@ function CreateListing() {
                   <input type="number" name="discountPrice" onChange={handleChange} value={formData.discountPrice} min="0" max="10000000" required className='p-3 border border-gray-300 rounded-lg'></input>
                   <div className='flex flex-col items-center'>
                     <p>Discounted Price</p>
-                    {formData.type === "rent" && <span className='text-xs'>($ / month)</span>}
+                    {formData.type === "rent" && <span className='text-xs'>(Rs / month)</span>}
                   </div>
                 </div>
               }
